@@ -4,6 +4,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 html,
 body {
     box-sizing: border-box;
@@ -68,9 +69,7 @@ body {
     padding: 0px 0px 0px 30px;
 }
 
-
 .intro {
-    margin-top: 5px;
 }
 
 .intro h1 {
@@ -101,26 +100,6 @@ body {
     margin-top: 50px;
 }
 
-.button:hover {
-    background-color: rgb(255, 83, 73);
-    color: white;
-    transition: all 0.4s;
-
-}
-
-.donate-now {
-    font-size: 1.2rem;
-    box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 8px inset;
-    cursor: pointer;
-    padding: 15px 35px;
-    border-radius: 7px;
-    border-style: none;
-    color: rgb(255, 83, 73);
-    font-family: 'poppins';
-    font-weight: 700;
-    margin-top: 50px;
-}
-
 .main-content .right {
     margin-top: -230px;
     text-align: center;
@@ -139,7 +118,7 @@ body {
     width: 95%;
     max-width: 500px;
     height: auto;
-    transform: translateY(15%);
+    transform: translateY(25%);
 }
 
 .blob {
@@ -166,7 +145,6 @@ body {
 }
 
 .p-two {
-    bottom: 50px;
     left: -30px;
     transform: translateX(50%);
     margin-top: 20px;
@@ -174,6 +152,87 @@ body {
     font-size: 20px;
     line-height: 30px;
 
+}
+
+@media (max-width: 1240px) {
+    .intro {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .logo-mybindle {
+        height: 60px;
+        width: 54.33px;
+        margin-top: 8px;
+    }
+
+    #mybindle {
+        font-size: 2rem;
+    }
+
+    .intro h1 {
+        font-size: 80px;
+        line-height: 90px;
+        letter-spacing: -2px;
+    }
+
+    .intro p {
+        padding: 0px 15px;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .button {
+        font-size: 1.5rem;
+        margin-top: 5px;
+    }
+
+    .section1 {
+        height: 100vh;
+    }
+
+    .main-content {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        min-height: 135vh;
+    }
+
+    .main-content .left {
+        margin-top: 5%;
+        padding: 0;
+        order: 1;
+    }
+
+    .main-content .right {
+        order: 2;
+    }
+
+    .mobile-mockup {
+        width: 70%;
+        max-width: 450px;
+        transform: translateX(5%);
+
+    }
+
+    .blob {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px 6px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .p-one {
+        top: 10%;
+        left: 25%;
+    }
+
+    .p-two {
+        transform: translateY(-250%);
+
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -193,9 +252,9 @@ body {
     }
 
     .intro h1 {
-        font-size: 44px;
-        line-height: 50px;
-        letter-spacing: -1px;
+        font-size: 60px; /* change it here */
+        line-height: 60px;
+        letter-spacing: -2px;
     }
 
     .intro p {
@@ -234,87 +293,6 @@ body {
     .mobile-mockup {
         width: 65%;
         max-width: 400px;
-        transform: translateX(5%);
-
-    }
-
-    .blob {
-        font-size: 14px;
-        line-height: 18px;
-        padding: 10px 6px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .p-one {
-        top: 10%;
-        left: 25%;
-    }
-
-    .p-two {
-        transform: translateY(-250%);
-
-        margin-top: 0px;
-    }
-}
-
-@media (max-width: 1240px) {
-    .intro {
-        margin-top: 0px;
-        text-align: center;
-    }
-
-    .logo-mybindle {
-        height: 60px;
-        width: 54.33px;
-        margin-top: 8px;
-    }
-
-    #mybindle {
-        font-size: 2rem;
-    }
-
-    .intro h1 {
-        font-size: 84px;
-        line-height: 85px;
-        letter-spacing: -0.5px;
-    }
-
-    .intro p {
-        padding: 0px 15px;
-        font-size: 25px;
-        margin-top: 20px;
-    }
-
-    .button {
-        font-size: 1.5rem;
-        margin-top: 5px;
-    }
-
-    .section1 {
-        height: 100vh;
-    }
-
-    .main-content {
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        min-height: 135vh;
-    }
-
-    .main-content .left {
-        margin-top: 5%;
-        padding: 0;
-        order: 1;
-    }
-
-    .main-content .right {
-        order: 2;
-    }
-
-    .mobile-mockup {
-        width: 70%;
-        max-width: 450px;
         transform: translateX(5%);
 
     }
@@ -534,7 +512,7 @@ body {
     }
 }
 
-@media (max-width: 1430px) {
+@media (max-width: 1240px) {
     /* .section-two {
         margin-top: 180px;
         text-align: center;
@@ -774,27 +752,6 @@ body {
     transform: translateY(120px);
     width: 25vw;
 }
-
-@media (max-width: 768px) {
-
-    .donation {
-        border-radius: 25px;
-    }
-
-    .donation-left h1 {
-        font-size: 2rem;
-        line-height: 35px;
-    }
-
-    .donation-left p {
-        font-size: clamp(1rem, 2vw, 12px);
-        max-width: 350px;
-    }
-
-
-}
-
-    
 @media (max-width: 1240px) {
 
     .donation {
@@ -802,8 +759,8 @@ body {
     }
 
     .donation-left h1 {
-        font-size: 4rem;
-        line-height: 55px;
+        font-size: 4.5rem;
+        line-height: 75px;
     }
 
     .donation-left p {
@@ -831,6 +788,28 @@ body {
         align-items: center;
     }
 }
+
+@media (max-width: 768px) {
+
+    .donation {
+        border-radius: 25px;
+    }
+
+    .donation-left h1 {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+
+    .donation-left p {
+        font-size: clamp(1rem, 2vw, 12px);
+        max-width: 350px;
+    }
+
+
+}
+
+    
+
 
 
 .review-head {
@@ -908,9 +887,11 @@ body {
         4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 1240px) {
     .review-head {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .reviews {
@@ -921,7 +902,6 @@ body {
     .card p {
         font-size: 18px;
     }
-
 
     .info b {
         font-size: 20px;
@@ -938,19 +918,7 @@ body {
     .see-more {
         margin-top: 20px;
     }
-}
 
-@media (max-width: 1240px) {
-    .review-head {
-        font-size: 3rem;
-    }
-
-    .reviews {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin: 50px 140px;
-        gap: 20px;
-    }
 
     .card {
         border-radius: 20px;
@@ -967,6 +935,55 @@ body {
     .info b {
         font-size: 25px;
     }
+
+}
+@media (max-width: 768px) {
+    .review-head {
+        font-size: 2rem;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 30px;
+    }
+    .card p {
+        font-size: 18px;
+    }
+
+    .info b {
+        font-size: 20px;
+    }
+
+    .see-more-container {
+        margin-bottom: 50px;
+    }
+
+    .card .review-section.more:first-of-type {
+        display: none;
+    }
+
+    .see-more {
+        margin-top: 20px;
+    }
+
+
+    .card {
+        border-radius: 20px;
+    }
+
+    .card p {
+        font-size: 25px;
+    }
+
+    .reviewer {
+        gap: 10px;
+    }
+
+    .info b {
+        font-size: 25px;
+    }
+
 
 }
 
@@ -1033,21 +1050,6 @@ body {
     width: 25vw;
 }
 
-@media (max-width: 768px) {
-
-    .download-left h1 {
-        font-size: 2rem;
-    }
-
-    .download-left p {
-        font-size: clamp(1rem, 1vw, 20px);
-    }
-
-    .store-button {
-        width: 130px;
-    }
-
-}
 
 @media (max-width: 1240px) {
     .download-app {
@@ -1083,4 +1085,38 @@ body {
         bottom: 10x;
         width: 35vw;
     }
+}
+
+
+
+@media (max-width: 768px) {
+  
+    .download-left h1 {
+        font-size: 3rem;
+    }
+
+    .download-left p {
+        font-size: clamp(1rem, 1vw, 20px);
+    }
+
+    .store-button {
+        width: 100px;
+    }
+        .download-right {
+        padding-top: 370px;
+        gap: 80px;
+    }
+
+    .download-right .img1 {
+        transform: translateX(140px);
+        bottom: -100px;
+        width: 25vw;
+    }
+
+    .download-right .img2 {
+        transform: translateX(70px);
+        bottom: -100px;
+        width: 25vw;
+    }
+
 }
